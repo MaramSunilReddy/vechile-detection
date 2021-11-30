@@ -87,7 +87,7 @@ while(cap.isOpened()):
             area=cv2.contourArea(cnt)
             print(area)
             if area>areaTH:
-                ####Tracking######
+                #####Tracking######
                 m=cv2.moments(cnt)
                 cx=int(m['m10']/m['m00'])
                 cy=int(m['m01']/m['m00'])
